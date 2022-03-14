@@ -24,8 +24,8 @@ func main() {
 	fmt.Println("Encryption")
 	fmt.Println()
 
-	text := []byte("Hello")
-	SecretKey := []byte("freepressfreeejulianassange2006!")
+	text := []byte("")
+	SecretKey := []byte("")
 
 	c, err := aes.NewCipher(SecretKey)
 	if err != nil {
