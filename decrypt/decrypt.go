@@ -23,7 +23,7 @@ func main() {
 	fmt.Println()
 
 	SecretKey := []byte("")
-	ciphertext, err := ioutil.ReadFile("../encrypt/a.data")
+	ciphertext, err := ioutil.ReadFile("../encrypt/data.data")
 
 	if err != nil {
 		fmt.Println(err)

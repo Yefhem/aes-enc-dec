@@ -39,7 +39,7 @@ func main() {
 	if _, err = io.ReadFull(rand.Reader, nonce); err != nil {
 		fmt.Println(err)
 	}
-	err = ioutil.WriteFile("a.data", gcm.Seal(nonce, nonce, text, nil), 0777)
+	err = ioutil.WriteFile("data.data", gcm.Seal(nonce, nonce, text, nil), 0777)
 	if err != nil {
 		fmt.Println(err)
 	}
